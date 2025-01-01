@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey form</h1>
+      <p id="description">Formulär</p>
+      <form id="survey-form">
+        <label id="name-label"
+          >Name<input id="name" type="text" placeholder="Your name" required
+        /></label>
+        <label id="email-label"
+          >Email<input
+            id="email"
+            type="email"
+            placeholder="Your email"
+            required
+        /></label>
+        <label id="number-label"
+          >Age<input
+            id="number"
+            type="number"
+            min="1"
+            max="110"
+            placeholder="Your age"
+            required
+        /></label>
+        <select id="dropdown">
+          <option disabled selected value>Choose role</option>
+          <option value="student">Student</option>
+          <option value="parent">Parent</option>
+          <option value="colleague">Colleague</option>
+        </select>
+        <input type="radio" value="0" name="0" />
+        <input type="radio" value="0" name="0" />
+        <input type="checkbox" value="0" name="0" />
+        <input type="checkbox" value="0" name="0" />
+        <textarea></textarea>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
