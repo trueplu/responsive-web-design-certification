@@ -64,6 +64,7 @@ h6 {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  accent-color: #7dd3fc;
 }
 
 body {
@@ -115,4 +116,11 @@ form {
 .text-small {
   font-size: 12px;
   padding-left: 8px;
+}
+
+#submit {
+  background-color: #fde68a;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
 }
