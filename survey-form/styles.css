@@ -111,3 +111,8 @@ form {
     padding-bottom: 8px;
   }
 }
+
+.text-small {
+  font-size: 12px;
+  padding-left: 8px;
+}
