@@ -102,4 +102,12 @@ form {
     flex-direction: column;
     gap: 8px;
   }
+
+  div label {
+    display: block;
+  }
+
+  div p {
+    padding-bottom: 8px;
+  }
 }
