@@ -75,6 +75,8 @@ body {
 main {
   max-width: 640px;
   margin: 0 auto;
+  padding: 2rem 0;
+  display: grid;
 }
 
 header {
@@ -89,4 +91,31 @@ header {
   header h1 {
     font-size: 56px;
   }
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+#img-caption,
+#tribute-info {
+  text-align: center;
+}
+iframe {
+  margin: 4rem auto;
+}
+
+#tribute-info {
+  margin: 2rem 0;
+}
+
+#tribute-link {
+  margin-top: 2rem;
+  text-align: center;
+  display: block;
+}
+
+#tribute-text {
+  display: grid;
+  gap: 1rem;
 }
