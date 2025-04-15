@@ -74,7 +74,7 @@ body {
 
 main {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 0 1rem;
   padding: 2rem 0;
   display: grid;
 }
@@ -90,6 +90,10 @@ header {
 @media screen and (min-width: 640px) {
   header h1 {
     font-size: 56px;
+  }
+
+  main {
+    margin: 0 auto;
   }
 }
 
@@ -107,6 +111,7 @@ img {
 }
 iframe {
   margin: 4rem auto;
+  max-width: 100%;
 }
 
 #tribute-info {
