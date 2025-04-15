@@ -97,6 +97,10 @@ img {
   margin-bottom: 1rem;
 }
 
+#img-caption {
+  font-style: italic;
+}
+
 #img-caption,
 #tribute-info {
   text-align: center;
@@ -107,15 +111,30 @@ iframe {
 
 #tribute-info {
   margin: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-wrap: balance;
 }
 
 #tribute-link {
   margin-top: 2rem;
   text-align: center;
-  display: block;
+  justify-self: center;
+  background: #fde68a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#tribute-link:hover {
+  background: #fddd5e;
+  box-shadow: 2px 2px 2px #000000;
 }
 
 #tribute-text {
   display: grid;
   gap: 1rem;
+  font-size: 1.2rem;
 }
