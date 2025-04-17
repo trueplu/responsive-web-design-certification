@@ -71,6 +71,8 @@ h6 {
   background: lightblue;
   padding: 1rem;
   text-align: center;
+  position: sticky;
+  top: 0;
 
   header {
     font-weight: 700;
@@ -81,6 +83,7 @@ h6 {
   a {
     display: block;
     padding: 0.5rem 2rem;
+    font-size: 1.25rem;
   }
 
   a:hover {
@@ -96,4 +99,21 @@ body {
 
 main {
   padding: 2rem;
+
+  header {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  code {
+    background: lightslategray;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+}
+
+.main-section {
+  margin-bottom: 2rem;
 }
