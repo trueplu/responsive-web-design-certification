@@ -65,14 +65,17 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   accent-color: #7dd3fc;
+
+  --navbar-width: 300px;
 }
 
 #navbar {
   background: lightblue;
   padding: 1rem;
   text-align: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  min-height: 100vh;
+  width: var(--navbar-width);
 
   header {
     font-weight: 700;
@@ -93,12 +96,12 @@ h6 {
 
 body {
   display: grid;
-  grid-template-columns: 300px 1fr;
   min-height: 100vh;
 }
 
 main {
   padding: 2rem;
+  margin-left: var(--navbar-width);
 
   header {
     font-weight: 700;
