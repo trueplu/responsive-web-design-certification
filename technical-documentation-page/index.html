@@ -28,6 +28,24 @@
           element. There can be only one <code>&lt;html&gt;</code> element in a
           document.
         </p>
+        <p>Accessibility</p>
+        <p>
+          While HTML does not require authors to specify
+          <code>&lt;html&gt;</code>
+          element start and ending tags, it is important for authors to do so as
+          it will allow them to specify the lang for the webpage. Providing a
+          lang attribute with a valid language tag according to RFC 5646: Tags
+          for Identifying Languages (also known as BCP 47) on the
+          <code>&lt;html&gt;</code> element will help screen reading technology
+          determine the proper language to announce. The identifying language
+          tag should describe the language used by the majority of the content
+          of the page. Without it, screen readers will typically default to the
+          operating system's set language, which may cause mispronunciations.
+          Including a valid lang declaration on the
+          <code>&lt;html&gt;</code> element also ensures that important metadata
+          contained in the page's <code>&lt;head&gt;</code>, such as the page's
+          title, are also announced properly.
+        </p>
         <p>
           <code></code>
         </p>
@@ -44,6 +62,7 @@
           and style sheets. There can be only one
           <code>&lt;head&gt;</code> element in an HTML document.
         </p>
+        <p></p>
         <p>
           <code></code>
         </p>
@@ -72,6 +91,21 @@
           expands upon the central topic of a document, or the central
           functionality of an application.
         </p>
+        <p>Accessibility</p>
+        <p>Landmark</p>
+        <p>
+          The <code>&lt;main&gt;</code> element behaves like a main landmark
+          role. Landmarks can be used by assistive technology to quickly
+          identify and navigate to large sections of the document. Prefer using
+          the <code>&lt;main&gt;</code> element over declaring role="main",
+          unless there are legacy browser support concerns. Skip navigation Skip
+          navigation, also known as "skipnav", is a technique that allows an
+          assistive technology user to quickly bypass large sections of repeated
+          content (main navigation, info banners, etc.). This lets the user
+          access the main content of the page faster. Adding an id attribute to
+          the <code>&lt;main&gt;</code> element lets it be a target of a skip
+          navigation link.
+        </p>
         <p>
           <code></code>
         </p>
@@ -83,6 +117,18 @@
         <p>
           The <code>&lt;img&gt;</code> HTML element embeds an image into the
           document.
+        </p>
+        <p>
+          Image loading errors If an error occurs while loading or rendering an
+          image, and an onerror event handler has been set for the error event,
+          that event handler will get called. This can happen in several
+          situations, including: The src attribute is empty ("") or null. The
+          src URL is the same as the URL of the page the user is currently on.
+          The image is corrupted in some way that prevents it from being loaded.
+          The image's metadata is corrupted in such a way that it's impossible
+          to retrieve its dimensions, and no dimensions were specified in the
+          <code>&lt;img&gt;</code> element's attributes. The image is in a
+          format not supported by the user agent.
         </p>
         <p>
           <code></code>
