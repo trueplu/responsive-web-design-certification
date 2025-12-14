@@ -1,8 +1,23 @@
 .card {
+  display: flex;
   width: 200px;
   height: 300px;
+  justify-content: space-between;
 }
 #playing-cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
+}
+.left {
+  align-self: flex-start;
+}
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+.right {
+  align-self: flex-end;
 }
