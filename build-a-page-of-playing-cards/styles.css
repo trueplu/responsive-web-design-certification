@@ -19,6 +19,9 @@ html {
 }
 .left {
   align-self: flex-start;
+  width: min-content;
+  text-align: center;
+  line-height: 0.9em;
 }
 .middle {
   display: flex;
@@ -26,9 +29,15 @@ html {
   flex-direction: column;
   overflow-wrap: anywhere;
   text-align: center;
+  font-size: 4.5rem;
+  line-height: 1em;
 }
 .right {
   align-self: flex-end;
+  rotate: 180deg;
+  width: min-content;
+  text-align: center;
+  line-height: 0.9em;
 }
 .red {
   color: red;
