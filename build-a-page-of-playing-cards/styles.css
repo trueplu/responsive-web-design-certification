@@ -24,6 +24,8 @@ html {
   display: flex;
   align-self: center;
   flex-direction: column;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 .right {
   align-self: flex-end;
