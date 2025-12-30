@@ -1,8 +1,15 @@
+html {
+  background-color: black;
+}
 .card {
   display: flex;
   width: 200px;
   height: 300px;
   justify-content: space-between;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
 }
 #playing-cards {
   display: flex;
