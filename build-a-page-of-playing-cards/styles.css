@@ -30,7 +30,7 @@ html {
   overflow-wrap: anywhere;
   text-align: center;
   font-size: 4.5rem;
-  line-height: 1em;
+  line-height: 0.8em;
 }
 .right {
   align-self: flex-end;
@@ -44,4 +44,7 @@ html {
 }
 .black {
   color: black;
+}
+.flip {
+  rotate: 180deg;
 }
