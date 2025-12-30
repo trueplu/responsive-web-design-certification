@@ -4,7 +4,140 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* 1. Use a more-intuitive box-sizing model */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* 2. Remove default margin */
+      * {
+        margin: 0;
+      }
+
+      body {
+        /* 3. Add accessible line-height */
+        line-height: 1.5;
+        /* 4. Improve text rendering */
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* 5. Improve media defaults */
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      /* 6. Inherit fonts for form controls */
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* 7. Avoid text overflows */
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      /* 8. Improve line wrapping */
+      p {
+        text-wrap: pretty;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-wrap: balance;
+      }
+
+      :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        accent-color: #7dd3fc;
+      }
+
+      body {
+        background-color: #0284c7;
+        color: #fff;
+      }
+
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      form {
+        background-color: #0c4a6e;
+        margin-top: 32px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        > label {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        div label {
+          display: block;
+        }
+
+        div p {
+          padding-bottom: 8px;
+        }
+      }
+
+      .text-small {
+        font-size: 12px;
+        padding-left: 8px;
+      }
+
+      #submit {
+        background-color: #fde68a;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        color: #000;
+      }
+
+      @media screen and (min-width: 640px) {
+        main {
+          padding: 16px;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
