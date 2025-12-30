@@ -28,3 +28,9 @@ html {
 .right {
   align-self: flex-end;
 }
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
