@@ -1,0 +1,19 @@
+tr[class='read'] {
+  background-image: linear-gradient(lightskyblue, white);
+}
+
+tr[class='to-read'] {
+  background-image: linear-gradient(rgb(57, 60, 218), white);
+}
+
+tr[class='in-progress'] {
+  background-image: linear-gradient(rgb(242, 135, 78), white);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class='to-read'] span[class='status'] {
+  border: 1px solid orange;
+}
