@@ -16,4 +16,10 @@ span {
 
 tr[class='to-read'] span[class='status'] {
   border: 1px solid orange;
+  background-image: linear-gradient(orange, yellow);
+}
+
+tr[class='read'] span[class='status'] {
+  border: 1px solid green;
+  background-image: linear-gradient(green, red);
 }
